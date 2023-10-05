@@ -1,0 +1,144 @@
+.title-contact {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+  /* width: 100%; */
+}
+.main-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.form-row-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(auto, 1fr));
+  flex-basis: 50%;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.input-filed {
+  background: #f1f1f1;
+  border: none;
+  outline: none;
+  padding: 12px 15px;
+  border-radius: 15px;
+  width: 100%;
+}
+
+.input-date {
+  grid-column: 1 / 3;
+}
+input:focus {
+  border: none;
+  outline: none;
+}
+
+select {
+  border: none;
+  outline: none;
+  padding: 10px 2px;
+}
+select option {
+  color: inherit;
+  padding: 5px 2px;
+  background: #f1f1f1 !important;
+}
+button {
+  margin: 5px;
+  border: none;
+  outline: none;
+  background-color: #fb811e;
+  border-radius: 15px;
+  color: white;
+  padding: 10px 40px;
+}
+
+.cards-contact {
+  margin: 20px 10px;
+  width: 100%;
+  display: flex;
+
+  justify-content: space-around;
+
+  align-items: start;
+}
+.card-contact {
+  width: 100%;
+  text-align: center;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 10px;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.card-contact img {
+  width: calc(100vw - 98vw);
+}
+
+.map-ifram {
+  border-radius: 20px;
+}
+.text-contact-card {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/* --breakpoint-xs: 0;
+--breakpoint-sm: 576px;
+--breakpoint-md: 768px;
+--breakpoint-lg: 992px;
+--breakpoint-xl: 1200px; */
+
+@media (max-width: 992px) {
+  .form-row-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .map-ifram {
+    width: 100% !important;
+    height: 250px !important;
+  }
+
+  .card-contact img {
+    width: calc(100vw - 96vw);
+  }
+  .cards-contact {
+    margin: 5px 5px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .map-ifram {
+    /* width: 100% !important; */
+    height: 200px !important;
+  }
+  .contact-form {
+    gap: 10px;
+  }
+  .cards-contact {
+    flex-direction: column;
+  }
+  .card-contact img {
+    width: calc(100vw - 95vw);
+  }
+}
